@@ -108,21 +108,25 @@
 
 
 
-  <meta name="keywords" content="Hello World">
-<meta property="og:type" content="website">
-<meta property="og:title" content="oneylee">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="数据类型强类型语言 8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型">
+<meta name="keywords" content="数据类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据类型">
+<meta property="og:url" content="http://yoursite.com/2018/08/24/数据类型/index.html">
 <meta property="og:site_name" content="oneylee">
+<meta property="og:description" content="数据类型强类型语言 8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-08-24T13:40:32.573Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="oneylee">
+<meta name="twitter:title" content="数据类型">
+<meta name="twitter:description" content="数据类型强类型语言 8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/24/数据类型/"/>
 
 
 
@@ -132,7 +136,7 @@
   };
 </script>
 
-  <title>oneylee</title>
+  <title>数据类型 | oneylee</title>
   
 
 
@@ -179,8 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,7 +220,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
   </li>
@@ -285,9 +288,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -319,11 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/24/数据类型/" itemprop="url">
-                  数据类型
-                </a>
+          <h1 class="post-title" itemprop="name headline">数据类型
               
             
           </h1>
@@ -404,17 +403,130 @@
       
 
       
-        
-          <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>强类型语言</p>
+        <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>强类型语言</p>
 <p>8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/24/数据类型/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<p><strong>整形</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:center">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:center">-2 147 483 648 ~ 2 147 483 647</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">2字节</td>
+<td style="text-align:center">-32768 ~ 32767</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:center">-9 223 372 036 854 775 808 ~ 9 223 372 036 854 775 807</td>
+</tr>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">1字节</td>
+<td style="text-align:center">-128 ~ 127</td>
+</tr>
+</tbody>
+</table>
+<p>Java中整形的范围与运行Java代码的机器无关。长整形数值有一个后缀L或者l，十六进制数值有一个前缀0x或者0X，八进制有一个前缀0。从java7开始，加上前缀0b或者0B就可以写二进制数。0b1001就是9，还可以为数字加上下划线。用1_000_000或者0b1111_0100_0010_0100_0000表示一百万。Java中没有任何无符号类型。</p>
+<p><strong>浮点类型</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:center">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:center">大约 +_3.402 823 47E+38F(有效位数为6-7位)</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:center">大约+_1.797 693 134 862 315 70E+308(有效位数15位)</td>
+</tr>
+</tbody>
+</table>
+<p>double精度是float的两倍，建议使用double。float类型数值有一个后缀F或者f。没有后缀的浮点数默认为double类型，也可以在数值后面加上D或者d。</p>
+<p>十六进制表示浮点数：0.125 = 2的-3次幂可以表示为0x1.0p-3。p表示指数而不是e。指数的基数是2不是10</p>
+<p>表示溢出和出错情况的三个特殊的浮点数值：</p>
+<ul>
+<li>正无穷大</li>
+<li>负无穷大</li>
+<li>NaN（不是一个数字）</li>
+</ul>
+<p>常量Double.POSITIVE_INFINITY、Double.NEGATIVE_INFINITY和 Double.NaN分别表示上面三个特殊的值</p>
+<p><strong>char类型：</strong></p>
+<p>char类型原本表示单个字符。如今有些Unicode字符也可以用一个char值描述，另一些Unicode还需要两个char值。char类型的字面值要用单引号括起来。char类型的值可以表示为十六进制值。范围从\u0000到\Uffff。例如：</p>
+<p><code>public static void main(String\u005B\u005D args)</code></p>
+<p>完全符合语法，上面两个Unicode码是[]的编码</p>
+<p>特殊字符的转义序列：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">转义序列</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">Unicode值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\b</td>
+<td style="text-align:center">退格</td>
+<td style="text-align:center">\u0008</td>
+</tr>
+<tr>
+<td style="text-align:center">\t</td>
+<td style="text-align:center">制表</td>
+<td style="text-align:center">\u0009</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:center">换行</td>
+<td style="text-align:center">\u000a</td>
+</tr>
+<tr>
+<td style="text-align:center">\r</td>
+<td style="text-align:center">回车</td>
+<td style="text-align:center">\u000d</td>
+</tr>
+<tr>
+<td style="text-align:center">\”</td>
+<td style="text-align:center">双引号</td>
+<td style="text-align:center">\u0022</td>
+</tr>
+<tr>
+<td style="text-align:center">\’</td>
+<td style="text-align:center">单引号</td>
+<td style="text-align:center">\u0027</td>
+</tr>
+<tr>
+<td style="text-align:center">\\</td>
+<td style="text-align:center">反斜杠</td>
+<td style="text-align:center">\u005c</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unicode 和 char类型</strong></p>
+<p>码点（code point）指一个编码表中的某个字符对应的代码值。在Unicode标准中，码点采用十六进制书写，并加上前缀U+，例如U+0041就是A的码点。</p>
+<p>在java中，char类型描述了UTF-16编码中的一个代码单元。不建议在程序中使用char类型除非要处理UTF-16代码单元。</p>
+<p><strong>boolean类型</strong></p>
+<p>布尔类型，有两个值：false和true</p>
+
       
     </div>
 
@@ -432,344 +544,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/19/智能指针/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="oneylee's blog">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="oneylee">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/19/智能指针/" itemprop="url">
-                  智能指针
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-08-19 23:41:25" itemprop="dateCreated datePublished" datetime="2018-08-19T23:41:25+08:00">2018-08-19</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-20 00:05:14" itemprop="dateModified" datetime="2018-08-20T00:05:14+08:00">2018-08-20</time>
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/数据类型/" rel="tag"># 数据类型</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <h2 id="智能指针"><a href="#智能指针" class="headerlink" title="智能指针"></a>智能指针</h2><p><strong>auto_ptr</strong>  <strong>unique_ptr</strong>  <strong>shared_prt</strong> <strong>weak_prt</strong><br>后三个是C++11支持，第一个被C++11弃用了<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/19/智能指针/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/19/智能指针/" rel="next" title="智能指针">
+                <i class="fa fa-chevron-left"></i> 智能指针
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="oneylee's blog">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="oneylee">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/08/18/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-08-18 23:48:40" itemprop="dateCreated datePublished" datetime="2018-08-18T23:48:40+08:00">2018-08-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-19 23:47:51" itemprop="dateModified" datetime="2018-08-19T23:47:51+08:00">2018-08-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/08/18/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -779,14 +583,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -807,8 +612,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -883,6 +697,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-number">1.</span> <span class="nav-text">数据类型</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1020,6 +850,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
 
   
 
