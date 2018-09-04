@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="数据类型强类型语言 8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型">
-<meta name="keywords" content="数据类型">
+  <meta name="description" content="编程技巧for循环 普通写法： 1for (int i = 0; i &amp;lt; strlen(s); i++)">
+<meta name="keywords" content="编程技巧">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据类型">
-<meta property="og:url" content="http://yoursite.com/2018/08/24/数据类型/index.html">
+<meta property="og:title" content="编程技巧.md">
+<meta property="og:url" content="http://yoursite.com/2018/09/04/编程技巧/index.html">
 <meta property="og:site_name" content="oneylee">
-<meta property="og:description" content="数据类型强类型语言 8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型">
+<meta property="og:description" content="编程技巧for循环 普通写法： 1for (int i = 0; i &amp;lt; strlen(s); i++)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-24T13:40:32.573Z">
+<meta property="og:updated_time" content="2018-09-04T15:24:39.233Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数据类型">
-<meta name="twitter:description" content="数据类型强类型语言 8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型">
+<meta name="twitter:title" content="编程技巧.md">
+<meta name="twitter:description" content="编程技巧for循环 普通写法： 1for (int i = 0; i &amp;lt; strlen(s); i++)">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/24/数据类型/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/04/编程技巧/"/>
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>数据类型 | oneylee</title>
+  <title>编程技巧.md | oneylee</title>
   
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/24/数据类型/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/04/编程技巧/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="oneylee's blog">
@@ -322,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据类型
+          <h1 class="post-title" itemprop="name headline">编程技巧.md
               
             
           </h1>
@@ -347,7 +347,7 @@
                 
               
 
-              <time title="创建时间：2018-08-24 21:37:09 / 修改时间：21:40:32" itemprop="dateCreated datePublished" datetime="2018-08-24T21:37:09+08:00">2018-08-24</time>
+              <time title="创建时间：2018-09-04 23:22:24 / 修改时间：23:24:39" itemprop="dateCreated datePublished" datetime="2018-09-04T23:22:24+08:00">2018-09-04</time>
             
 
             
@@ -369,7 +369,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/C-Java/" itemprop="url" rel="index"><span itemprop="name">C++, Java</span></a></span>
 
                 
                 
@@ -403,129 +403,50 @@
       
 
       
-        <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>强类型语言</p>
-<p>8种基本类型，4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char、1种用来表示真值的boolean类型</p>
+        <h2 id="编程技巧"><a href="#编程技巧" class="headerlink" title="编程技巧"></a>编程技巧</h2><h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><ol>
+<li><p>普通写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; strlen(s); i++)</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p><strong>整形</strong>：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">存储需求</th>
-<th style="text-align:center">取值范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">int</td>
-<td style="text-align:center">4字节</td>
-<td style="text-align:center">-2 147 483 648 ~ 2 147 483 647</td>
-</tr>
-<tr>
-<td style="text-align:center">short</td>
-<td style="text-align:center">2字节</td>
-<td style="text-align:center">-32768 ~ 32767</td>
-</tr>
-<tr>
-<td style="text-align:center">long</td>
-<td style="text-align:center">8字节</td>
-<td style="text-align:center">-9 223 372 036 854 775 808 ~ 9 223 372 036 854 775 807</td>
-</tr>
-<tr>
-<td style="text-align:center">byte</td>
-<td style="text-align:center">1字节</td>
-<td style="text-align:center">-128 ~ 127</td>
-</tr>
-</tbody>
-</table>
-<p>Java中整形的范围与运行Java代码的机器无关。长整形数值有一个后缀L或者l，十六进制数值有一个前缀0x或者0X，八进制有一个前缀0。从java7开始，加上前缀0b或者0B就可以写二进制数。0b1001就是9，还可以为数字加上下划线。用1_000_000或者0b1111_0100_0010_0100_0000表示一百万。Java中没有任何无符号类型。</p>
-<p><strong>浮点类型</strong>：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">存储需求</th>
-<th style="text-align:center">取值范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">float</td>
-<td style="text-align:center">4字节</td>
-<td style="text-align:center">大约 +_3.402 823 47E+38F(有效位数为6-7位)</td>
-</tr>
-<tr>
-<td style="text-align:center">double</td>
-<td style="text-align:center">8字节</td>
-<td style="text-align:center">大约+_1.797 693 134 862 315 70E+308(有效位数15位)</td>
-</tr>
-</tbody>
-</table>
-<p>double精度是float的两倍，建议使用double。float类型数值有一个后缀F或者f。没有后缀的浮点数默认为double类型，也可以在数值后面加上D或者d。</p>
-<p>十六进制表示浮点数：0.125 = 2的-3次幂可以表示为0x1.0p-3。p表示指数而不是e。指数的基数是2不是10</p>
-<p>表示溢出和出错情况的三个特殊的浮点数值：</p>
-<ul>
-<li>正无穷大</li>
-<li>负无穷大</li>
-<li>NaN（不是一个数字）</li>
-</ul>
-<p>常量Double.POSITIVE_INFINITY、Double.NEGATIVE_INFINITY和 Double.NaN分别表示上面三个特殊的值</p>
-<p><strong>char类型：</strong></p>
-<p>char类型原本表示单个字符。如今有些Unicode字符也可以用一个char值描述，另一些Unicode还需要两个char值。char类型的字面值要用单引号括起来。char类型的值可以表示为十六进制值。范围从\u0000到\Uffff。例如：</p>
-<p><code>public static void main(String\u005B\u005D args)</code></p>
-<p>完全符合语法，上面两个Unicode码是[]的编码</p>
-<p>特殊字符的转义序列：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">转义序列</th>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">Unicode值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">\b</td>
-<td style="text-align:center">退格</td>
-<td style="text-align:center">\u0008</td>
-</tr>
-<tr>
-<td style="text-align:center">\t</td>
-<td style="text-align:center">制表</td>
-<td style="text-align:center">\u0009</td>
-</tr>
-<tr>
-<td style="text-align:center">\n</td>
-<td style="text-align:center">换行</td>
-<td style="text-align:center">\u000a</td>
-</tr>
-<tr>
-<td style="text-align:center">\r</td>
-<td style="text-align:center">回车</td>
-<td style="text-align:center">\u000d</td>
-</tr>
-<tr>
-<td style="text-align:center">\”</td>
-<td style="text-align:center">双引号</td>
-<td style="text-align:center">\u0022</td>
-</tr>
-<tr>
-<td style="text-align:center">\’</td>
-<td style="text-align:center">单引号</td>
-<td style="text-align:center">\u0027</td>
-</tr>
-<tr>
-<td style="text-align:center">\\</td>
-<td style="text-align:center">反斜杠</td>
-<td style="text-align:center">\u005c</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Unicode 和 char类型</strong></p>
-<p>码点（code point）指一个编码表中的某个字符对应的代码值。在Unicode标准中，码点采用十六进制书写，并加上前缀U+，例如U+0041就是A的码点。</p>
-<p>在java中，char类型描述了UTF-16编码中的一个代码单元。不建议在程序中使用char类型除非要处理UTF-16代码单元。</p>
-<p><strong>boolean类型</strong></p>
-<p>布尔类型，有两个值：false和true</p>
+<p>高效写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0, len = strlen(s); i &lt; len; i++)</span><br></pre></td></tr></table></figure>
+<p>避免多次执行strlen，耗时较长</p>
+</li>
+<li><p>临时变量定义位置，尽量定义在循环外部</p>
+<p>普通写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; 10; i++)&#123;</span><br><span class="line">    string s = ss[i];</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>高效写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string s;</span><br><span class="line">for (int i = 0; i &lt; 10; i++)&#123;</span><br><span class="line">    s = ss[i];</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>减少调用构造、析构次数，提高效率。小对象可以定义在循环内部来增加程序可读性</p>
+</li>
+</ol>
+<h3 id="基本运算和函数"><a href="#基本运算和函数" class="headerlink" title="基本运算和函数"></a>基本运算和函数</h3><ol>
+<li>乘以2（2的整数次幂）或者除以2的时候多用位运算代替</li>
+<li>尽量减少除法运算如用if(a*c == b) 代替if(a == b/c)，除法操作的耗时大致是乘法的两倍</li>
+<li>多用+=、-=、*=、/=等符合运算符，以加一为例，效率由高到低为(i++ , i += 1, i = i + 1)</li>
+<li>多用小巧的库函数，比如：swap、max、min、sort</li>
+</ol>
+<h3 id="inline、const、-amp-修饰符"><a href="#inline、const、-amp-修饰符" class="headerlink" title="inline、const、&amp;修饰符"></a>inline、const、&amp;修饰符</h3><ol>
+<li>inline让函数内联，建议编译器将函数体代码复制到函数调用处，适用于函数体比较短小，调用频率比较高的地方，能够避免因函数调用带来的内存开销</li>
+<li>const不仅可以保证修饰的变量只读，提高代码的稳定性，还可以让编译器优化代码。比如我们用const修饰一个常量，程序中所有用到这个常量的地方都会被替换成这个值，避免读取地址造成的浪费。</li>
+<li>&amp;修饰返回值类型和参数类型表示引用传递，避免构造对象的开销</li>
+</ol>
+<h3 id="缓存（cache）和寄存器（register）"><a href="#缓存（cache）和寄存器（register）" class="headerlink" title="缓存（cache）和寄存器（register）"></a>缓存（cache）和寄存器（register）</h3><p>除了CPU就是缓存和寄存器的访问速度最高了，一般不建议自己定义寄存器变量和控制数据缓存，编译器会自动帮我们把常用的一些数据放到缓存和寄存器中。可以了解一些编译器控制数据的依据。一般来叔放到寄存器/缓存的数据优先级为：用register修饰的变量，循环控制变量，auto局部变量，静态变量，用户自己分配的内存数据。</p>
+<h3 id="迭代器（iterator）"><a href="#迭代器（iterator）" class="headerlink" title="迭代器（iterator）"></a>迭代器（iterator）</h3><ol>
+<li><p>访问容器中的元素的时候尽量使用迭代器而不是下标或者指针。迭代器访问元素类似于指针，相对于下标访问不用根据下标值计算地址，这在循环中能够节省不少时间。其次，迭代器作为指针的一种延拓，能够更好的代表并操作其所指的对象，下标访问中往往用一个int类型的pos来表示pos下标下的元素，没有面向对象编程的直观:)。迭代器为我们访问各种容器（数组，vector，list，map，queue，deque，set…）中的元素提供了统一的方法，其作用类似于“语法糖”，编程更方便简单。</p>
+</li>
+<li><p>迭代器的自增和自减运算符，iterator++和++iterator的效率有很大区别：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">iterator &amp; operator++()</span><br><span class="line">&#123;//前增</span><br><span class="line">    ++*this;</span><br><span class="line">    return (*this);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">iterator operator++(int)</span><br><span class="line">&#123;//后增</span><br><span class="line">    iterator temp = *this;</span><br><span class="line">    ++*this;</span><br><span class="line">    return (temp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>后增相对于前增创建了一个临时迭代器变量，并将其返回，前增直接返回原来迭代器的引用。创建临时变量，值传递时的复制构造都需要耗时。</p>
+</li>
+</ol>
+<h3 id="vector容器"><a href="#vector容器" class="headerlink" title="vector容器"></a>vector容器</h3><ol>
+<li>适当的时候使用emplace和emplace_back代替insert和push_back。insert和push_back的函数参数是vector容器里的模板对象，而带emplace的函数参数是模板对象的构造函数的参数，前者需要插入模板对象而后者不用先生成好对象。</li>
+<li>vector的底层实现是由数组实现的，在当元素数量大于当前最大容量的时候会生成一个更大的数组，再将原来的对象复制构造到新对数组中去，这样开销是挺大的。为了减小开销我们可以预估需要的空间大小，在vector初始化的时候直接指定capacity。这种方法也有缺点，我们需要准确预估空间大小，而且开始时占用了比较大的无用内存。一个好的解决办法是在vector中存储指针，指针指向要保存的对象，这样可以避免上面的缺点。</li>
+</ol>
+<h3 id="if判断条件"><a href="#if判断条件" class="headerlink" title="if判断条件"></a>if判断条件</h3><p>在判断一个班所以学生成绩的时候：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">for 所有学生分数</span><br><span class="line">	if 分数 &lt; 60</span><br><span class="line">		不及格</span><br><span class="line">	else if 分数 &lt; 70</span><br><span class="line">		及格</span><br><span class="line">	else if 分数 &lt; 80</span><br><span class="line">		良好</span><br><span class="line">	else</span><br><span class="line">		优秀</span><br></pre></td></tr></table></figure>
+<p>代码逻辑没问题，但是如果一个班里大部分都是优秀，那这段代码执行效率就比较低，因为大部分都有经过三次判断，所以if判断要根据实际情况进行调整。</p>
+<h3 id="switch分支判断"><a href="#switch分支判断" class="headerlink" title="switch分支判断"></a>switch分支判断</h3><p>switch语句的底层实现主要有三种方式：转换为if else语句，跳转表，树形结构。当分支比较小时，编译器倾向于转换为if else语句。当分支比较多，分支范围很广时用树形结构。当分支数量不算多，分支范围紧凑时用跳转表。跳转表的底层实现是数组映射，对条件转换的效率为O(1)，相对于另外两种方式优势明显，因此我们应该尽量控制分支的数量，以及让各个分支的int数据更紧凑。</p>
 
       
     </div>
@@ -546,7 +467,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/数据类型/" rel="tag"># 数据类型</a>
+            <a href="/tags/编程技巧/" rel="tag"># 编程技巧</a>
           
         </div>
       
@@ -559,8 +480,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/19/智能指针/" rel="next" title="智能指针">
-                <i class="fa fa-chevron-left"></i> 智能指针
+              <a href="/2018/08/24/数据类型/" rel="next" title="数据类型">
+                <i class="fa fa-chevron-left"></i> 数据类型
               </a>
             
           </div>
@@ -568,10 +489,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/04/编程技巧/" rel="prev" title="编程技巧.md">
-                编程技巧.md <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -715,7 +632,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-number">1.</span> <span class="nav-text">数据类型</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#编程技巧"><span class="nav-number">1.</span> <span class="nav-text">编程技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#for循环"><span class="nav-number">1.1.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本运算和函数"><span class="nav-number">1.2.</span> <span class="nav-text">基本运算和函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#inline、const、-amp-修饰符"><span class="nav-number">1.3.</span> <span class="nav-text">inline、const、&amp;修饰符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缓存（cache）和寄存器（register）"><span class="nav-number">1.4.</span> <span class="nav-text">缓存（cache）和寄存器（register）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代器（iterator）"><span class="nav-number">1.5.</span> <span class="nav-text">迭代器（iterator）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vector容器"><span class="nav-number">1.6.</span> <span class="nav-text">vector容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#if判断条件"><span class="nav-number">1.7.</span> <span class="nav-text">if判断条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#switch分支判断"><span class="nav-number">1.8.</span> <span class="nav-text">switch分支判断</span></a></li></ol></li></ol></div>
             
 
           </div>
