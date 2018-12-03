@@ -302,6 +302,182 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/03/Git-笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="oneylee's blog">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="oneylee">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/03/Git-笔记/" itemprop="url">
+                  Git  笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-03 19:52:12 / 修改时间：22:05:46" itemprop="dateCreated datePublished" datetime="2018-12-03T19:52:12+08:00">2018-12-03</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Git-笔记"><a href="#Git-笔记" class="headerlink" title="Git 笔记"></a>Git 笔记</h1><h2 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h2><ul>
+<li>创建一个本地仓库</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//创建一个本地文件夹</span><br><span class="line">mkdir workspace</span><br><span class="line"></span><br><span class="line">//进入文件夹</span><br><span class="line">cd workspace</span><br><span class="line"></span><br><span class="line">//初始化git仓库</span><br><span class="line">git init</span><br><span class="line">#打印信息：Initialized empty Git repository in C:/Users/Think/workspace/.git/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>操作</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">//添加文件到该仓库，前提是该文件已存在，例如已经存在的文件readme.md要添加进该仓库</span><br><span class="line">git add readme.md</span><br><span class="line"></span><br><span class="line">//提交文件, &quot;-m&quot;命令后加提交日志</span><br><span class="line">git commit -m &quot;add readme.md&quot;</span><br><span class="line">#打印信息：</span><br><span class="line">[master (root-commit) 86633e0] add readme.md</span><br><span class="line">1 file changed, 1 insertion(+)</span><br><span class="line">create mode 100644 readme.md</span><br><span class="line"></span><br><span class="line">//查看仓库状态，每个文件变化情况，在readme.md文件添加一行</span><br><span class="line">git status</span><br><span class="line">#打印信息：</span><br><span class="line">On branch master</span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line"></span><br><span class="line">        modified:   readme.md</span><br><span class="line"></span><br><span class="line">//查看文件具体的修改情况</span><br><span class="line">git diff readme.md</span><br><span class="line">#打印信息：</span><br><span class="line">The file will have its original line endings in your working directory.</span><br><span class="line">diff --git a/readme.md b/readme.md</span><br><span class="line">index 33af859..a0f4722 100644</span><br><span class="line">--- a/readme.md</span><br><span class="line">+++ b/readme.md</span><br><span class="line">@@ -1 +1,2 @@</span><br><span class="line"> This is my readme.</span><br><span class="line">+This is second line.</span><br><span class="line"></span><br><span class="line">//提交修改，分两步</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m &quot;modify readme.md&quot;</span><br><span class="line"></span><br><span class="line">//查看日志</span><br><span class="line">git log</span><br><span class="line">git log --pretty=oneline	//显示单行</span><br><span class="line"></span><br><span class="line">//查看日志的时候可以看到一长串16进制数字，这个是本次提交的版本号，当前版本用HEAD表示，上次版本用HEAD^表示，上上次版本用HEAD^^表示，上多少此版本用HEAD+多少个^表示，也可以表示为：上20个版本：HEAD~20.版本回退：</span><br><span class="line">git reset --hard HEAD^	//回退到上个版本</span><br><span class="line">//想要更新到最新版本</span><br><span class="line">git reset --hard 版本号前几位</span><br><span class="line">//不记得版本号？查一下每次操作后的版本信息</span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line">//git系统分为三个区域</span><br><span class="line">//工作区	-&gt;	暂存区	-&gt;	master分支</span><br><span class="line">git add	-&gt;	将文件放进暂存区</span><br><span class="line">git commit -&gt;	将文件放进master(系统自动创建的分支)分支</span><br><span class="line"></span><br><span class="line">//查看工作区的文件与版本库里最新版本的差异</span><br><span class="line">git diff HEAD -- readme.md</span><br><span class="line"></span><br><span class="line">//撤销本次修改，回退到上次git commit/git add后的状态，也就是回退工作区的修改</span><br><span class="line">git checkout -- readme.md</span><br><span class="line">//如果已经git add，需要撤销暂存区的修改，然后撤销工作区的修改</span><br><span class="line">git reset HEAD readme.md</span><br><span class="line">git checkout -- readme.md</span><br><span class="line"></span><br><span class="line">//删除版本库里的文件</span><br><span class="line">git rm readme.md</span><br><span class="line">git commit -m &quot;remove readme.md&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>在GitHub上创建远程仓库</p>
+<ol>
+<li>创建SSH Key。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>一路回车，结束后在用户主目录，Windows一般在C:\用户\.ssh路径，Linux一般在/root/.ssh下，有id_rsa和id_rsa.pub两个文件，这两个是SSH Key的密钥，带pub的是公钥，另一个是私钥</p>
+<ol start="2">
+<li>登陆你的GitHub，打开Account settings-&gt;SSH Keys页面，然后点击Add SSH Key,填上Title，在Key文本框里粘贴id_rsa.pub里面的内容。最后点击ADD Key，添加成功！</li>
+<li>登陆你的GitHub，点击右上角+位置，选择New repository，在Repository name位置填上仓库名字，点击下方Create repository按钮，创建成功。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//关联本地和远程仓库/yourname为你的GitHub账号/repositoryname为仓库名</span><br><span class="line">git remote add origin https://github.com/yourname/repositoryname.git</span><br><span class="line">//第一次将本地仓库的文件推送的远程仓库origin</span><br><span class="line">git push -u origin master</span><br><span class="line">//$ git push -u origin master</span><br><span class="line">fatal: &apos;github.com/oneylee/log.git&apos; does not appear to be a git repository</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">报错处理：</span><br><span class="line">git remote rm origin</span><br><span class="line">git remote add origin https://github.com/yourname/repositoryname.git</span><br><span class="line">git push -u origin master</span><br><span class="line">-u命令：第一次推送时将本地master和远程master关联起来</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/04/编程技巧/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -987,7 +1163,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1006,7 +1182,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1025,7 +1201,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
